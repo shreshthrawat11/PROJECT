@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our Chatbot Project</title>
+    <!-- Add this meta tag to relax security policy -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://www.gstatic.com https://apis.google.com; script-src 'self' https://www.gstatic.com; style-src 'self' 'unsafe-inline';">
+</head>
+<body>
+
+    <h1>Welcome to Our Project</h1>
+    <p>This is our test page for the chatbot.</p>
+
+   <script src="https://www.gstatic.com/dialogflow-console/fast/messenger-cx/bootstrap.js?v=1"></script>
+<df-messenger
+  df-cx="true"
+  location="us-central1"
+  chat-title="NewAgent"
+  agent-id="e530e5ea-c875-4380-991b-63f6be8c06f7"
+  language-code="en"
+></df-messenger>
+
+</body>
+</html>
