@@ -1,40 +1,7 @@
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Our Chatbot Project</title>
-</head>
-<body>
-
-    <h1>Welcome to Our Project</h1>
-    <p>This is our test page for the chatbot.</p>
-
-   <script src="https://www.gstatic.com/dialogflow-console/fast/messenger-cx/bootstrap.js?v=1"></script>
-<df-messenger
-  intent="WELCOME"
-  chat-title="NewAgent"
-  agent-id="e530e5ea-c875-4380-991b-63f6be8c06f7"
-  language-code="en"
-></df-messenger>
-
-<!-- ADD THIS NEW SCRIPT TAG -->
-<script>
-    // Function to check if the custom element is defined
-    function checkElement() {
-        if (customElements.get('df-messenger')) {
-            console.log('df-messenger element is defined. Widget should load.');
-        } else {
-            console.error('df-messenger element is NOT defined. The script may be blocked.');
-            // Try to force the browser to define it
-            let script = document.createElement('script');
-            script.src = "https://www.gstatic.com/dialogflow-console/fast/messenger-cx/bootstrap.js?v=1";
-            document.body.appendChild(script);
-        }
-    }
-    // Run the check after the page loads
-    window.onload = checkElement;
-</script>
-<!-- END OF NEW SCRIPT -->
-
-</body>
-</html>
+iframe
+    allow="microphone;"
+    width="350"
+    height="430"
+    src="https://console.dialogflow.com/api-client/demo/embedded/e530e5ea-c875-4380-991b-63f6be8c06f7">
+</iframe>
+      
